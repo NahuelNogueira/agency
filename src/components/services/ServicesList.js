@@ -1,6 +1,5 @@
 import ServiceCard from "./ServiceCard";
 
-
 function ServicesList({ posts, section_title }) {
   return (
     <>
@@ -8,7 +7,7 @@ function ServicesList({ posts, section_title }) {
         <div className="absolute inset-0">
           <div className="h-1/3 bg-gray-100 sm:h-2/3" />
         </div>
-        <div className="relative mx-auto max-w-7xl">
+        <div className="relative mx-auto lg:mx-12 max-w-full">
           <div className="text-left">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               {section_title}
@@ -16,7 +15,7 @@ function ServicesList({ posts, section_title }) {
           </div>
           <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
             {posts.map((post, index) => (
-                <ServiceCard data={post} index={index}/>
+              <ServiceCard data={post} index={index} />
             ))}
           </div>
         </div>

@@ -1,7 +1,7 @@
 function LogoCloud() {
   return (
     <div className="bg-gray-50">
-      <div className=" mx-auto lg:mx-12 pt-8 pb-8">
+      <div className="mx-auto lg:mx-12 lg:mx-12 pt-8 pb-8">
         <h3 className="lg:text-3xl text-3xl px-4 font-bold leading-6 text-gray-900">
           Work with top notch companies
         </h3>
