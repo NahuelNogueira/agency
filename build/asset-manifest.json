@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.fe156610.js",
-    "static/js/787.33f2248d.chunk.js": "/static/js/787.33f2248d.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/static/css/main.2169917b.css",
+    "main.js": "/static/js/main.430c1128.js",
+    "static/media/boomslag-black.png": "/static/media/boomslag-black.27e2b30710dda10e3cd2.png",
+    "static/media/oo.png": "/static/media/oo.3847d28e32ebe197a2da.png",
+    "static/media/design.png": "/static/media/design.b143a50a4ad06c02b85a.png",
+    "static/media/coding.png": "/static/media/coding.38ca06909629ed92a4e5.png",
+    "static/media/loading.gif": "/static/media/loading.b632c0f6770c04c51f58.gif",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.fe156610.js.map": "/static/js/main.fe156610.js.map",
-    "787.33f2248d.chunk.js.map": "/static/js/787.33f2248d.chunk.js.map"
+    "main.2169917b.css.map": "/static/css/main.2169917b.css.map",
+    "main.430c1128.js.map": "/static/js/main.430c1128.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.fe156610.js"
+    "static/css/main.2169917b.css",
+    "static/js/main.430c1128.js"
   ]
 }

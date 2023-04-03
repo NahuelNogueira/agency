@@ -78,7 +78,7 @@ function Navbar() {
       className="w-full py-2 top-0 transition duration-300 ease-in-out z-40 fixed"
     >
       <div className="px-4 sm:px-6">
-        <div className="-ml-4 -mt-2 hidden lg:flex flex-wrap items-center justify-between sm:flex-nowrap md:px-14 px-2">
+        <div className="-ml-4 -mt-2 hidden lg:flex flex-wrap items-center justify-between sm:flex-nowrap md:px-6 px-2">
           <Link to="/" className="ml-4 mt-2">
             <img
               src={
@@ -92,44 +92,44 @@ function Navbar() {
           <div className="ml-4 mt-2 flex-shrink-0">
             <NavLink
               to="/casos"
-              className="text-regular inline-flex font-medium leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
+              className="text-regular inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
             >
               Casos
             </NavLink>
             <NavLink
               to="/servicios"
-              className="text-regular inline-flex font-medium leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
+              className="text-regular inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
             >
               Servicios
             </NavLink>
             <NavLink
               to="/nosotros"
-              className="text-regularregular inline-flex font-medium leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
+              className="text-regularregular inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
             >
               Nosotros
             </NavLink>
             <NavLink
               to="/carreras"
-              className="text-regularregular inline-flex font-medium leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
+              className="text-regularregular inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
             >
               Carreras
             </NavLink>
             <NavLink
               to="/blog"
-              className="text-regular inline-flex font-medium leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
+              className="text-regular inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
             >
               Blog
             </NavLink>
             <NavLink
               to="/contacto"
-              className="text-regular inline-flex font-medium leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
+              className="text-regular inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
             >
               Contacto
             </NavLink>
 
             <Link
               to="/contacto"
-              className="inline-flex ml-12 items-center rounded-md border border-transparent bg-orange-button px-6 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-900 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+              className="inline-flex ml-12 items-center rounded-md border border-transparent bg-orange-button px-6 py-2 text-base font-semibold text-white shadow-sm hover:bg-gray-900 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             >
               Hire us
               <DotLoader

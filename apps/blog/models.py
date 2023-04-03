@@ -10,20 +10,34 @@ def blog_thumbnail_directory(instance, filename):
 # Create your models here.
 
 class Post(models.Model):
+
+    class PostObjects(models.Manager):
+        def get_queryset(self):
+            return super().get_queryset().filter(status='published')
+        
+    options = (
+        ('draft',  'Draft'),
+        ('published', 'Published'),
+        )
     
     title = models.CharField(max_length=255)
     slug=models.SlugField(max_length=255, unique=True)
-    thumbnail = models.ImageField(upload_to=blog_thumbnail_directory)
+    thumbnail = models.ImageField(upload_to=blog_thumbnail_directory, max_length=500)
     
-    excerpt = models.CharField(max_length=255)
-    description = RichTextField()
+    description = models.TextField(max_length=255)
+    content = RichTextField()
     
     time_read = models.IntegerField()
     
     published = models.DateTimeField(default=timezone.now)
     views = models.IntegerField(default=0, blank=True)
+
+    status = models.CharField(max_length=10, choices=options, default='draft')
     
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
+
+    objects = models.Manager() #default manager
+    postobjects =  PostObjects() #custom manager
     
     class Meta:
         ordering = ('-published',)
