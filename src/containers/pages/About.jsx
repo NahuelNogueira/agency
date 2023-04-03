@@ -28,7 +28,7 @@ function About() {
           content="softtware agency, marketing agency, web development"
         ></meta>
         <meta name="robots" content="all"></meta>
-        <link rel="canonical" href="https://www.murkiva.com"></link>
+        <link rel="canonical" href="#"></link>
         <meta name="author" content="Murkiva" />
         <meta name="publisher" content="Murkiva" />
 
