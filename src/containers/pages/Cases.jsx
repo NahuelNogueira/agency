@@ -50,11 +50,15 @@ function Cases() {
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-
       <Navbar />
       <div className="pt-28">
-        <Header />
-        <CasesList />
+        <div className="mx-auto max-w-1700 px-4 sm:px-6 lg:px-8">
+          {/* We've used 3xl here, but fell free to try other max-widths based on your needs  */}
+          <div className="mx-auto max-w-1700">
+            <Header />
+            <CasesList />
+          </div>
+        </div>
       </div>
       <Footer />
     </Layout>

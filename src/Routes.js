@@ -1,5 +1,4 @@
 import {
-  BrowserRouter as Router,
   Route,
   Routes,
   useLocation,
@@ -18,6 +17,9 @@ import { AnimatePresence } from "framer-motion";
 import Category from "containers/pages/Category";
 import Search from "containers/pages/Search";
 import PostDetail from "containers/pages/PostDetail";
+import OptIn from "containers/pages/OptIn";
+import Ecommerce from "containers/pages/cases/Ecommerce";
+import JavascriptDev from "containers/pages/services/development/JavascriptDev";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -31,7 +33,9 @@ function AnimatedRoutes() {
         {/* Home Display */}
         <Route path="/" element={<Home />} />
         <Route path="/casos" element={<Cases />} />
+        <Route path="/casos/ecommerce" element={<Ecommerce />} />
         <Route path="/servicios" element={<Services />} />
+        <Route path="/servicios/javascript" element={<JavascriptDev />} />
         <Route path="/nosotros" element={<About />} />
         <Route path="/carreras" element={<Careers />} />
         <Route path="/blog" element={<Blog />} />
@@ -39,6 +43,7 @@ function AnimatedRoutes() {
         <Route path="/s=:term" element={<Search />} />
         <Route path="/category/:slug" element={<Category />} />
         <Route path="/contacto" element={<Contact />} />
+        <Route path="/newsletter" element={<OptIn />} />
       </Routes>
     </AnimatePresence>
   );
