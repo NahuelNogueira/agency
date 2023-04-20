@@ -6,8 +6,8 @@ export default function CasesList() {
     {
       id: "1234-qwert",
       title: "Boost your conversion rate",
-      href: "#",
-      category: { name: "Article", href: "#" },
+      href: "/casos/ecommerce",
+      category: { name: "Ecommerce" },
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
       date: "Mar 16, 2020",
@@ -25,8 +25,8 @@ export default function CasesList() {
     {
       id: "1234-asdf",
       title: "How to use search engine optimization to drive sales",
-      href: "#",
-      category: { name: "Video", href: "#" },
+      href: "/casos/ecommerce",
+      category: { name: "Video" },
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
       date: "Mar 10, 2020",
@@ -36,7 +36,7 @@ export default function CasesList() {
       readingTime: "4 min",
       author: {
         name: "Brenna Goyette",
-        href: "#",
+        href: "/casos/ecommerce",
         imageUrl:
           "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       },
@@ -45,7 +45,7 @@ export default function CasesList() {
       id: "1234-zxcv",
       title: "Improve your customer experience",
       href: "#",
-      category: { name: "Case Study", href: "#" },
+      category: { name: "Videogames" },
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
       date: "Feb 12, 2020",
@@ -55,7 +55,7 @@ export default function CasesList() {
       readingTime: "11 min",
       author: {
         name: "Daniela Metz",
-        href: "#",
+        href: "/casos/ecommerce",
         imageUrl:
           "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       },
@@ -71,7 +71,7 @@ export default function CasesList() {
   ];
 
   return (
-    <div className="relative bgpx-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
+    <div className="relative bg pt-16 pb-20 lg:pt-24 lg:pb-28">
       <div className="absolute inset-0">
         <div className="h-1/3 bg-white sm:h-2/3" />
       </div>

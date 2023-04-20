@@ -11,38 +11,38 @@ import DotLoader from "react-spinners/DotLoader";
 
 const solutions = [
   {
-    name: "Casos",
-    description: "Measure actions your users take",
+    name: "Cases",
+    description: "Take a look to our use cases",
     href: "/casos",
     icon: IconOne,
   },
   {
-    name: "Servicios",
-    description: "Create your own targeted content",
+    name: "Services",
+    description: "Look all the services that we bring to your project",
     href: "/servicios",
     icon: IconTwo,
   },
   {
-    name: "Nosotros",
-    description: "Keep track of your growth",
+    name: "About us",
+    description: "Know all about our company",
     href: "/nosotros",
     icon: IconThree,
   },
   {
-    name: "Carreras",
-    description: "Keep track of your growth",
+    name: "Careers",
+    description: "Watch out for our career opportunities",
     href: "/carreras",
-    icon: IconThree,
+    icon: IconOne,
   },
   {
     name: "Blog",
-    description: "Keep track of your growth",
+    description: "Keep updated with the latest news",
     href: "/blog",
-    icon: IconThree,
+    icon: IconTwo,
   },
   {
-    name: "Contacto",
-    description: "Keep track of your growth",
+    name: "Contact",
+    description: "feel free to send us a message",
     href: "/contacto",
     icon: IconThree,
   },
@@ -74,152 +74,156 @@ function Navbar() {
 
   return (
     <nav
+      data-scroll
+      data-scroll-id="hey"
       id="navbar"
-      className="w-full py-2 top-0 transition duration-300 ease-in-out z-40 fixed"
+      className="w-full py-4 top-0 transition duration-500 ease-in-out z-40 fixed"
     >
-      <div className="px-4 sm:px-6">
-        <div className="-ml-4 -mt-2 hidden lg:flex flex-wrap items-center justify-between sm:flex-nowrap md:px-6 px-2">
-          <Link to="/" className="ml-4 mt-2">
-            <img
-              src={
-                "https://bafybeiczl4dcxupma2zeyilkukfl4yge64axnhajd722wxgin62mtts6uy.ipfs.w3s.link/murkivamarketing.png"
-              }
-              width={160}
-              height={160}
-              className=""
-            />
-          </Link>
-          <div className="ml-4 mt-2 flex-shrink-0">
-            <NavLink
-              to="/casos"
-              className="text-regular inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
-            >
-              Casos
-            </NavLink>
-            <NavLink
-              to="/servicios"
-              className="text-regular inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
-            >
-              Servicios
-            </NavLink>
-            <NavLink
-              to="/nosotros"
-              className="text-regularregular inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
-            >
-              Nosotros
-            </NavLink>
-            <NavLink
-              to="/carreras"
-              className="text-regularregular inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
-            >
-              Carreras
-            </NavLink>
-            <NavLink
-              to="/blog"
-              className="text-regular inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
-            >
-              Blog
-            </NavLink>
-            <NavLink
-              to="/contacto"
-              className="text-regular inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-white hover:border-orange-500 transition duration-300 ease-in-out mx-4"
-            >
-              Contacto
-            </NavLink>
-
-            <Link
-              to="/contacto"
-              className="inline-flex ml-12 items-center rounded-md border border-transparent bg-orange-button px-6 py-2 text-base font-semibold text-white shadow-sm hover:bg-gray-900 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-            >
-              Hire us
-              <DotLoader
-                className="ml-3 -mr-1 h-5 w-5"
-                loading={loading}
-                size={20}
-                color="#f2f2f2"
+      <div className="mx-auto max-w-1700 px-4 sm:px-4 lg:px-8">
+        {/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
+        <div className="mx-auto max-w-1700">
+          {/* Desktop Navbar */}
+          <div className="-ml-4 -mt-2  hidden lg:flex flex-wrap items-center justify-between sm:flex-nowrap md:px-4 px-2">
+            <Link to="/" className="ml-4 mt-2">
+              <img
+                src={
+                  "https://bafybeiczl4dcxupma2zeyilkukfl4yge64axnhajd722wxgin62mtts6uy.ipfs.w3s.link/murkivamarketing.png"
+                }
+                width={160}
+                height={160}
+                className=""
               />
             </Link>
+            <div className="ml-4 mt-2 flex-shrink-0">
+              <NavLink
+                to="/casos"
+                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-orange-500 transition duration-500 ease-in-out mx-5"
+              >
+                Cases
+              </NavLink>
+              <NavLink
+                to="/servicios"
+                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-orange-500 transition duration-500 ease-in-out mx-5"
+              >
+                Services
+              </NavLink>
+              <NavLink
+                to="/nosotros"
+                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-orange-500 transition duration-500 ease-in-out mx-5"
+              >
+                About us
+              </NavLink>
+              <NavLink
+                to="/carreras"
+                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-orange-500 transition duration-500 ease-in-out mx-5"
+              >
+                Careers
+              </NavLink>
+              <NavLink
+                to="/blog"
+                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-orange-500 transition duration-500 ease-in-out mx-5"
+              >
+                Blog
+              </NavLink>
+
+              <Link
+                to="/contacto"
+                className="inline-flex ml-10 items-center rounded-md border border-transparent bg-orange-button px-6 py-2.5 text-lg font-medium text-white shadow-sm hover:bg-gray-900 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+              >
+                Hire us
+                <span className="px-2">
+                  <DotLoader
+                    className="ml-3 -mr-1 h-5 w-5"
+                    loading={loading}
+                    size={20}
+                    color="#f2f2f2"
+                  />
+                </span>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className="-ml-4 -mt-2 lg:hidden flex flex-wrap items-center justify-between sm:flex-nowrap md:px-14 px-2">
-          <Link to="/" className="ml-4 mt-2">
-            <img
-              src={
-                "https://bafybeiczl4dcxupma2zeyilkukfl4yge64axnhajd722wxgin62mtts6uy.ipfs.w3s.link/murkivamarketing.png"
-              }
-              width={160}
-              height={160}
-              className=""
-            />
-          </Link>
-          <div className="ml-4 mt-2 flex-shrink-0">
-            <Popover className="relative">
-              {({ open }) => (
-                <>
-                  <Popover.Button
-                    className={`
-                ${open ? "" : "text-opacity-90"}
-                focus:ring-none focus:outline-none`}
-                  >
-                    {open ? (
-                      <i className="bx bx-x text-3xl"></i>
-                    ) : (
-                      <i className="bx bx-menu text-3xl"></i>
-                    )}
-                  </Popover.Button>
-                  <Transition
-                    as={Fragment}
-                    enter="transition ease-out duration-200"
-                    enterFrom="opacity-0 translate-y-1"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in duration-150"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 translate-y-1"
-                  >
-                    <Popover.Panel className="absolute -left-32 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
-                      <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
-                          {solutions.map((item) => (
-                            <Link
-                              key={item.name}
-                              to={item.href}
-                              className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+          {/* Mobile Navbar */}
+          <div className="-ml-4 -mt-2 lg:hidden flex flex-wrap items-center justify-between sm:flex-nowrap md:px-4 px-2">
+            <Link to="/" className="ml-4 mt-3">
+              <img
+                src={
+                  "https://bafybeiczl4dcxupma2zeyilkukfl4yge64axnhajd722wxgin62mtts6uy.ipfs.w3s.link/murkivamarketing.png"
+                }
+                width={160}
+                height={160}
+                className=""
+              />
+            </Link>
+            <div className="ml-4 mt-2 flex-shrink-0">
+              <Popover className="relative">
+                {({ open }) => (
+                  <>
+                    <Popover.Button
+                      className={`
+                              ${open ? "" : "text-opacity-90"}
+                              focus:ring-none focus:outline-none`}
+                    >
+                      {open ? (
+                        <i className="bx bx-x text-4xl mt-1"></i>
+                      ) : (
+                        <i className="bx bx-menu text-4xl mt-1"></i>
+                      )}
+                    </Popover.Button>
+
+                    <Transition
+                      as={Fragment}
+                      enter="transition ease-out duration-200"
+                      enterFrom="opacity-0 translate-y-1"
+                      enterTo="opacity-100 translate-y-0"
+                      leave="transition ease-in duration-150"
+                      leaveFrom="opacity-100 translate-y-0"
+                      leaveTo="opacity-0 translate-y-1"
+                    >
+                      <Popover.Panel className="absolute -left-32 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
+                        <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                          <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
+                            {solutions.map((item) => (
+                              <Link
+                                key={item.name}
+                                to={item.href}
+                                className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                              >
+                                <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
+                                  <item.icon aria-hidden="true" />
+                                </div>
+                                <div className="ml-4">
+                                  <p className="text-sm font-medium text-gray-900">
+                                    {item.name}
+                                  </p>
+                                  <p className="text-sm text-gray-500">
+                                    {item.description}
+                                  </p>
+                                </div>
+                              </Link>
+                            ))}
+                          </div>
+                          <div className="bg-gray-50 p-4">
+                            <a
+                              href="##"
+                              className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                             >
-                              <div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-                                <item.icon aria-hidden="true" />
-                              </div>
-                              <div className="ml-4">
-                                <p className="text-sm font-medium text-gray-900">
-                                  {item.name}
-                                </p>
-                                <p className="text-sm text-gray-500">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </Link>
-                          ))}
-                        </div>
-                        <div className="bg-gray-50 p-4">
-                          <a
-                            href="##"
-                            className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                          >
-                            <span className="flex items-center">
-                              <span className="text-sm font-medium text-gray-900">
-                                Documentation
+                              <span className="flex items-center">
+                                <span className="text-sm font-medium text-gray-900">
+                                  Documentation
+                                </span>
                               </span>
-                            </span>
-                            <span className="block text-sm text-gray-500">
-                              Start integrating products and tools
-                            </span>
-                          </a>
+                              <span className="block text-sm text-gray-500">
+                                Start integrating products and tools
+                              </span>
+                            </a>
+                          </div>
                         </div>
-                      </div>
-                    </Popover.Panel>
-                  </Transition>
-                </>
-              )}
-            </Popover>
+                      </Popover.Panel>
+                    </Transition>
+                  </>
+                )}
+              </Popover>
+            </div>
           </div>
         </div>
       </div>

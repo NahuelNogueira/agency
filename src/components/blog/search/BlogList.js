@@ -1,6 +1,7 @@
+import SmallSetPaginationSearch from 'components/pagination/SmallSetPaginationSearch'
 import BlogCardSearch from '../BlogCardSearch'
 import { CheckCircleIcon, ChevronRightIcon, EnvelopeIcon } from '@heroicons/react/20/solid'
-import SmallSetPaginationSearch from "components/pagination/SmallSetpaginationSearch"
+
 
 
 function BlogList({posts,get_blog_list_page,count,term}){

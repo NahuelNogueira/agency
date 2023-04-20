@@ -9,14 +9,15 @@ const navigation = {
       { name: 'Insights', href: '#' },
     ],
     support: [
-      { name: 'Contacto', href: '/contacto' },
+      { name: 'Contact', href: '/contacto' },
     ],
     company: [
-      { name: 'Casos', href: '/casos' },
-      { name: 'Servicios', href: '/servicios' },
-      { name: 'Nosotros', href: '/nosotros' },
-      { name: 'Carreras', href: '/carreras' },
+      { name: 'Cases', href: '/casos' },
+      { name: 'Services', href: '/servicios' },
+      { name: 'About us', href: '/nosotros' },
+      { name: 'Careers', href: '/carreras' },
       { name: 'Blog', href: '/blog' },
+      { name: 'Newsletter', href: '/newsletter' },
 
     ],
     legal: [

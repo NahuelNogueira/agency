@@ -4,18 +4,17 @@ import Header from "components/services/Header";
 import ServicesList from "components/services/ServicesList";
 import Layout from "hocs/layouts/Layout";
 import coding_img from "assets/img/services/coding.png";
-import design_img from "assets/img/services/design.png";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 
 const posts_software = [
   {
-    title: "Boost your conversion rate",
+    title: "Javascript Developers",
     img: coding_img,
-    href: "#",
-    category: { name: "Article", href: "#" },
+    href: "/servicios/javascript",
+    category: { name: "Development", href: "#" },
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
+      "Talented and agile javascript developers for your project, available 24/7.",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     imageUrl:
@@ -30,8 +29,8 @@ const posts_software = [
   },
   {
     title: "How to use search engine optimization to drive sales",
-    img: coding_img,
     href: "#",
+    img: coding_img,
     category: { name: "Video", href: "#" },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
@@ -49,8 +48,8 @@ const posts_software = [
   },
   {
     title: "Improve your customer experience",
-    img: coding_img,
     href: "#",
+    img: coding_img,
     category: { name: "Case Study", href: "#" },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
@@ -71,7 +70,7 @@ const posts_software = [
 const posts_design = [
   {
     title: "Boost your conversion rate",
-    img: design_img,
+    img: coding_img,
     href: "#",
     category: { name: "Article", href: "#" },
     description:
@@ -90,8 +89,8 @@ const posts_design = [
   },
   {
     title: "How to use search engine optimization to drive sales",
-    img: design_img,
     href: "#",
+    img: coding_img,
     category: { name: "Video", href: "#" },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
@@ -109,8 +108,8 @@ const posts_design = [
   },
   {
     title: "Improve your customer experience",
-    img: design_img,
     href: "#",
+    img: coding_img,
     category: { name: "Case Study", href: "#" },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
@@ -135,17 +134,17 @@ function Services() {
   return (
     <Layout>
       <Helmet>
-        <title>Murkiva | Software Development Services</title>
+        <title>Murkiva | Services</title>
         <meta
           name="description"
-          content="Software and Digital Market Agency."
-        ></meta>
+          content="Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones."
+        />
         <meta
           name="keywords"
-          content="softtware agency, marketing agency, web development"
-        ></meta>
-        <meta name="robots" content="all"></meta>
-        <link rel="canonical" href="https://www.murkiva.com"></link>
+          content="agencia de software, agencia de marketing, creacion de pagina web"
+        />
+        <meta name="robots" content="all" />
+        <link rel="canonical" href="https://www.murkiva.com/" />
         <meta name="author" content="Murkiva" />
         <meta name="publisher" content="Murkiva" />
 
@@ -172,16 +171,23 @@ function Services() {
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-
       <Navbar />
       <div className="pt-28">
-        <Header />
-        <div className="py-12 bg-gray-50"></div>
-        <ServicesList
-          posts={posts_software}
-          section_title={"Software and Product Development"}
-        />
-        <ServicesList posts={posts_design} section_title={"Design Services"} />
+        <div className="mx-auto max-w-1700 px-4 sm:px-6 lg:px-8">
+          {/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
+          <div className="mx-auto max-w-1700">
+            <Header />
+            <div className="py-12 "></div>
+            <ServicesList
+              posts={posts_software}
+              section_title={"Software and Product Development"}
+            />
+            <ServicesList
+              posts={posts_design}
+              section_title={"Design Services"}
+            />
+          </div>
+        </div>
       </div>
       <Footer />
     </Layout>
