@@ -6,13 +6,13 @@ const navigation = {
     { name: 'Insights', href: '#' },
   ],
   support: [
-      { name: 'Contacto', href: '/contacto' },
+      { name: 'Contact', href: '/contact' },
   ],
   company: [
-      { name: 'Casos', href: '/casos' },
-      { name: 'Servicios', href: '/servicios' },
-      { name: 'Nosotros', href: '/nosotros' },
-      { name: 'Carreras', href: '/carreras' },
+      { name: 'Cases', href: '/cases' },
+      { name: 'Services', href: '/services' },
+      { name: 'About', href: '/about' },
+      { name: 'Careers', href: '/careers' },
       { name: 'Blog', href: '/blog' },
   ],
   legal: [
@@ -58,7 +58,7 @@ const navigation = {
     },
     {
       name: 'GitHub',
-      href: '#',
+      href: 'https://github.com/NahuelNogueira',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path

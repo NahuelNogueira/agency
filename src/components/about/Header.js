@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom";
-import { Typewriter } from "react-simple-typewriter";
-
 function Header() {
   return (
     <main>

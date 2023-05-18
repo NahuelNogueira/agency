@@ -32,17 +32,17 @@ function AnimatedRoutes() {
 
         {/* Home Display */}
         <Route path="/" element={<Home />} />
-        <Route path="/casos" element={<Cases />} />
-        <Route path="/casos/ecommerce" element={<Ecommerce />} />
-        <Route path="/servicios" element={<Services />} />
-        <Route path="/servicios/javascript" element={<JavascriptDev />} />
-        <Route path="/nosotros" element={<About />} />
-        <Route path="/carreras" element={<Careers />} />
+        <Route path="/cases" element={<Cases />} />
+        <Route path="/cases/ecommerce" element={<Ecommerce />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/javascript" element={<JavascriptDev />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/careers" element={<Careers />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<PostDetail />} />
         <Route path="/s=:term" element={<Search />} />
         <Route path="/category/:slug" element={<Category />} />
-        <Route path="/contacto" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/newsletter" element={<OptIn />} />
       </Routes>
     </AnimatePresence>

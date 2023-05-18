@@ -1,21 +1,7 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
 const people = [
   {
     name: "Lindsay Walton",
-    role: "Front-end Developer",
+    role: "Full-stack Developer",
     imageUrl:
       "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
     twitterUrl: "#",
@@ -56,7 +42,7 @@ function Team() {
                   <div className="space-y-2">
                     <div className="space-y-1 text-lg font-medium leading-6">
                       <h3>{person.name}</h3>
-                      <p className="text-indigo-600">{person.role}</p>
+                      <p className="text-cyan-600">{person.role}</p>
                     </div>
                     <ul role="list" className="flex space-x-5">
                       <li>

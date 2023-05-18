@@ -1,8 +1,8 @@
 const posts = [
     {
       title: 'Boost your conversion rate',
-      href: '#',
-      category: { name: 'Article', href: '#' },
+      href: '/cases',
+      category: { name: 'Article'},
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.',
       date: 'Mar 16, 2020',
@@ -19,8 +19,8 @@ const posts = [
     },
     {
       title: 'How to use search engine optimization to drive sales',
-      href: '#',
-      category: { name: 'Video', href: '#' },
+      href: '/cases',
+      category: { name: 'Video' },
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.',
       date: 'Mar 10, 2020',
@@ -30,7 +30,7 @@ const posts = [
       readingTime: '4 min',
       author: {
         name: 'Brenna Goyette',
-        href: '#',
+        href: '/cases',
         imageUrl:
           'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
       },
@@ -38,7 +38,7 @@ const posts = [
     {
       title: 'Improve your customer experience',
       href: '#',
-      category: { name: 'Case Study', href: '#' },
+      category: { name: 'Case Study' },
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.',
       date: 'Feb 12, 2020',
@@ -48,7 +48,7 @@ const posts = [
       readingTime: '11 min',
       author: {
         name: 'Daniela Metz',
-        href: '#',
+        href: '/cases',
         imageUrl:
           'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
       },
@@ -57,7 +57,7 @@ const posts = [
   
   export default function UseCases() {
     return (
-      <div className="relative bg-gray-50 pt-16 pb-20 lg:pt-24 lg:pb-28">
+      <div className="relative bg-gray-50 pt-16 pb-12 lg:pt-24 lg:pb-20">
         <div className="absolute inset-0">
           <div className="h-1/3 bg-white sm:h-2/3" />
         </div>
@@ -76,7 +76,7 @@ const posts = [
                 </div>
                 <div className="flex flex-1 flex-col justify-between bg-white p-6">
                   <div className="flex-1">
-                    <p className="text-sm font-medium text-indigo-600">
+                    <p className="text-sm font-medium text-cyan-600">
                       <a href={post.category.href} className="hover:underline">
                         {post.category.name}
                       </a>

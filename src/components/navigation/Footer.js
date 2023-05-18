@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import logo_oo from 'assets/img/oo.png'
+import Logo_foot from 'assets/img/Logo_foot.png'
 
 const navigation = {
     solutions: [
@@ -9,13 +9,13 @@ const navigation = {
       { name: 'Insights', href: '#' },
     ],
     support: [
-      { name: 'Contact', href: '/contacto' },
+      { name: 'Contact', href: '/contact' },
     ],
     company: [
-      { name: 'Cases', href: '/casos' },
-      { name: 'Services', href: '/servicios' },
-      { name: 'About us', href: '/nosotros' },
-      { name: 'Careers', href: '/carreras' },
+      { name: 'Cases', href: '/cases' },
+      { name: 'Services', href: '/services' },
+      { name: 'About us', href: '/about' },
+      { name: 'Careers', href: '/careers' },
       { name: 'Blog', href: '/blog' },
       { name: 'Newsletter', href: '/newsletter' },
 
@@ -100,12 +100,12 @@ function Footer(){
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8 xl:col-span-1">
               <img
-                src={logo_oo}
+                src={Logo_foot}
                 width={140}
-                height={120}
+                height={110}
                 className=""/>
               <p className="text-base text-gray-500">
-                Making the world a better place through constructing elegant hierarchies.
+                Making the world a better place through constructing elegant products.
               </p>
               <div className="flex space-x-6">
                 {navigation.social.map((item) => (
@@ -157,7 +157,7 @@ function Footer(){
                   </ul>
                 </div>
                 <div className="mt-12 md:mt-0">
-                  <h3 className="text-base font-medium text-gray-900">Services</h3>
+                  <h3 className="text-base font-medium text-gray-900">Legal</h3>
                   <ul role="list" className="mt-4 space-y-4">
                     {navigation.legal.map((item) => (
                       <li key={item.name}>
@@ -172,7 +172,7 @@ function Footer(){
             </div>
           </div>
           <div className="mt-12 border-t border-gray-200 pt-8">
-            <p className="text-base text-gray-400 xl:text-center">&copy; 2023 Murkiva by Boomslag, Inc. All rights reserved.</p>
+            <p className="text-base text-gray-400 xl:text-center">&copy; 2023 Hawk by NN, Inc. All rights reserved.</p>
           </div>
         </div>
       </footer>

@@ -3,9 +3,8 @@ import Navbar from "components/navigation/Navbar"
 import Layout from "hocs/layouts/Layout"
 import { useEffect } from "react"
 import { Helmet } from 'react-helmet-async';
-import { get_categories } from "redux/actions/categories/categories";
 import { connect } from "react-redux";
-import { get_blog_list, get_blog_list_page, search_blog, search_blog_page } from "redux/actions/blog/blog";
+import {  search_blog, search_blog_page } from "redux/actions/blog/blog";
 import { useParams } from "react-router-dom";
 import BlogList from "components/blog/search/BlogList";
 

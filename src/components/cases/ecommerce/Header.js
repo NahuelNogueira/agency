@@ -5,7 +5,7 @@ export default function Header() {
         <div className="relative mx-auto max-w-full px-4 sm:static sm:px-6 lg:px-8">
           <div className="sm:max-w-3xl">
             <h1 className="mb-12 text-3xl font-bold text-cyan-600">
-              Boomslag.com
+              Hawk.com
             </h1>
             <h1 className="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Ecommerce Case Study

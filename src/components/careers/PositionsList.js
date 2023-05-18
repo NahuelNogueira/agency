@@ -65,7 +65,7 @@ function PositionsList() {
           <select
             id="location"
             name="location"
-            className="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+            className="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-cyan-500 focus:outline-none focus:ring-cyan-500 sm:text-sm"
             defaultValue="Canada"
           >
             <option>United States</option>
@@ -91,7 +91,7 @@ function PositionsList() {
                     </div>
                     <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                       <div>
-                        <p className="truncate text-sm font-medium text-indigo-600">
+                        <p className="truncate text-sm font-medium text-cyan-600">
                           {application.applicant.name}
                         </p>
                         <p className="mt-2 flex items-center text-sm text-gray-500">

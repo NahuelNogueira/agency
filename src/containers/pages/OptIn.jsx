@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import Layout from "hocs/layouts/Layout";
 import Navbar from "components/navigation/Navbar";
 import Footer from "components/navigation/Footer";
-import { ChevronRightIcon, StarIcon } from "@heroicons/react/20/solid";
+import { StarIcon } from "@heroicons/react/20/solid";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { CircleLoader } from "react-spinners";

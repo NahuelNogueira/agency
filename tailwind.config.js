@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        "orange-button":'#ff561e'
+        "cyan-button":'#0284C7'
       },
       maxWidth: {
         '1700':'1700px',

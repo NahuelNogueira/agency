@@ -5,12 +5,12 @@ function ServiceCard({ data, index }) {
     <div
       onMouseEnter={() => {
         const title_element = document.getElementById(`learn` + index);
-        title_element.classList.add("text-orange-500");
+        title_element.classList.add("text-cyan-500");
         title_element.classList.remove("text-gray-900");
       }}
       onMouseLeave={() => {
         const title_element = document.getElementById(`learn` + index);
-        title_element.classList.remove("text-orange-500");
+        title_element.classList.remove("text-cyan-500");
         title_element.classList.add("text-gray-900");
       }}
       className="w-full relative p-8 h-96 lg:h-[200pm] border border-gray-100 bg-white hover:shadow-card hover:-translate-y-1 transition duration-300 ease-in-out"

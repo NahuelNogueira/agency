@@ -6,13 +6,13 @@ const navigation = {
     { name: 'Insights', href: '#' },
   ],
   support: [
-      { name: 'Contacto', href: '/contacto' },
+      { name: 'Contacto', href: '/contact' },
   ],
   company: [
-      { name: 'Casos', href: '/casos' },
-      { name: 'Servicios', href: '/servicios' },
-      { name: 'Nosotros', href: '/nosotros' },
-      { name: 'Carreras', href: '/carreras' },
+      { name: 'Casos', href: '/cases' },
+      { name: 'Servicios', href: '/services' },
+      { name: 'Nosotros', href: '/about' },
+      { name: 'Carreras', href: '/careers' },
       { name: 'Blog', href: '/blog' },
   ],
   legal: [
@@ -58,7 +58,7 @@ const navigation = {
     },
     {
       name: 'GitHub',
-      href: '#',
+      href: 'https://github.com/NahuelNogueira',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -93,10 +93,10 @@ function Header(){
           <div className="mx-auto max-w-full xl:mx-12 xl:pt-40 xl:pb-64 lg:pt-40 lg:pb-48 pt-24 pb-12">
             <div>
               <div>
-                <h1 className="text-4xl font-semibold tracking-tight pb-16  sm:text-6xl">
+                <h1 className="text-4xl font-semibold tracking-tight pb-16 leading-8 sm:text-5xl">
                   Case Studies
                 </h1>
-                <p className="mt-16 text-2xl max-w-3xl leading-8 text-black ">
+                <p className="mt-12 text-2xl max-w-3xl leading-8 text-black ">
                   Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
                   amet fugiat veniam occaecat fugiat aliqua.
                 </p>

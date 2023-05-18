@@ -1,5 +1,5 @@
 const stats = [
-  { label: "Founded", value: "2021" },
+  { label: "Founded", value: "2013" },
   { label: "Employees", value: "5" },
   { label: "Beta Users", value: "521" },
   { label: "Raised", value: "$25M" },
@@ -56,8 +56,8 @@ export default function TestStats() {
                 src="https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
                 alt=""
               />
-              <div className="absolute inset-0 bg-indigo-500 mix-blend-multiply" />
-              <div className="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90" />
+              <div className="absolute inset-0 bg-cyan-500 mix-blend-multiply" />
+              <div className="absolute inset-0 bg-gradient-to-t from-cyan-800 via-cyan-600 opacity-90" />
               <div className="relative px-8">
                 <div>
                   <img
@@ -144,7 +144,7 @@ export default function TestStats() {
               ))}
             </dl>
             <div className="mt-10">
-              <a href="#" className="text-base font-medium text-indigo-600">
+              <a href="/contact" className="text-base font-medium text-cyan-600">
                 Learn more about how we're changing the world
                 <span aria-hidden="true"> &rarr;</span>
               </a>
