@@ -8,7 +8,7 @@ function App() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Murkiva | Software Agency</title>
+        <title>Hawk | Software Agency</title>
         <meta
           name="description"
           content="Software and Digital Market Agency."
@@ -18,23 +18,23 @@ function App() {
           content="softtware agency, marketing agency, web development"
         ></meta>
         <meta name="robots" content="all"></meta>
-        <link rel="canonical" href="https://www.murkiva.com"></link>
-        <meta name="author" content="Murkiva" />
-        <meta name="publisher" content="Murkiva" />
+        <link rel="canonical" href="https://www.hawk.com"></link>
+        <meta name="author" content="Hawk" />
+        <meta name="publisher" content="Hawk" />
 
         {/* Social Media Tags */}
-        <meta property="og:title" content="Murkiva | Software Agency" />
+        <meta property="og:title" content="Hawk | Software Agency" />
         <meta
           property="og:description"
           content="Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones."
         />
-        <meta property="og:url" content="https://www.murkiva.com/" />
+        <meta property="og:url" content="https://www.hawk.com/" />
         <meta
           property="og:image"
           content="https://bafybeicwrhxloesdlojn3bxyjqnxgsagtd4sl53a7t4cn4vfe2abmybzua.ipfs.w3s.link/lightbnuilbg.jpg"
         />
 
-        <meta name="twitter:title" content="Murkiva | Software Agency" />
+        <meta name="twitter:title" content="Hawk | Software Agency" />
         <meta
           name="twitter:description"
           content="Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones."

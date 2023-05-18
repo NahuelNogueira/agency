@@ -1,37 +1,34 @@
 import { connect } from "react-redux";
 import { Popover, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Fragment } from "react";
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import logo_oo from "assets/img/oo.png";
-import logo_boomslag from "assets/img/boomslag-black.png";
-import loading from "assets/img/loading.gif";
 import DotLoader from "react-spinners/DotLoader";
+import Logo_nav from "assets/img/Logo_nav.png"
 
 const solutions = [
   {
     name: "Cases",
     description: "Take a look to our use cases",
-    href: "/casos",
+    href: "/cases",
     icon: IconOne,
   },
   {
     name: "Services",
     description: "Look all the services that we bring to your project",
-    href: "/servicios",
+    href: "/services",
     icon: IconTwo,
   },
   {
     name: "About us",
     description: "Know all about our company",
-    href: "/nosotros",
+    href: "/about",
     icon: IconThree,
   },
   {
     name: "Careers",
     description: "Watch out for our career opportunities",
-    href: "/carreras",
+    href: "/careers",
     icon: IconOne,
   },
   {
@@ -43,7 +40,7 @@ const solutions = [
   {
     name: "Contact",
     description: "feel free to send us a message",
-    href: "/contacto",
+    href: "/contact",
     icon: IconThree,
   },
 ];
@@ -77,58 +74,56 @@ function Navbar() {
       data-scroll
       data-scroll-id="hey"
       id="navbar"
-      className="w-full py-4 top-0 transition duration-500 ease-in-out z-40 fixed"
+      className="w-full py-2 top-0 transition duration-500 ease-in-out z-40 fixed"
     >
       <div className="mx-auto max-w-1700 px-4 sm:px-4 lg:px-8">
         {/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
         <div className="mx-auto max-w-1700">
           {/* Desktop Navbar */}
           <div className="-ml-4 -mt-2  hidden lg:flex flex-wrap items-center justify-between sm:flex-nowrap md:px-4 px-2">
-            <Link to="/" className="ml-4 mt-2">
+            <Link to="/" className="ml-6 mt-2">
               <img
-                src={
-                  "https://bafybeiczl4dcxupma2zeyilkukfl4yge64axnhajd722wxgin62mtts6uy.ipfs.w3s.link/murkivamarketing.png"
-                }
-                width={160}
-                height={160}
+                src={Logo_nav}
+                width={150}
+                height={150}
                 className=""
               />
             </Link>
             <div className="ml-4 mt-2 flex-shrink-0">
               <NavLink
-                to="/casos"
-                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-orange-500 transition duration-500 ease-in-out mx-5"
+                to="/cases"
+                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-cyan-500 transition duration-500 ease-in-out mx-5"
               >
                 Cases
               </NavLink>
               <NavLink
-                to="/servicios"
-                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-orange-500 transition duration-500 ease-in-out mx-5"
+                to="/services"
+                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-cyan-500 transition duration-500 ease-in-out mx-5"
               >
                 Services
               </NavLink>
               <NavLink
-                to="/nosotros"
-                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-orange-500 transition duration-500 ease-in-out mx-5"
+                to="/about"
+                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-cyan-500 transition duration-500 ease-in-out mx-5"
               >
                 About us
               </NavLink>
               <NavLink
-                to="/carreras"
-                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-orange-500 transition duration-500 ease-in-out mx-5"
+                to="/careers"
+                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-cyan-500 transition duration-500 ease-in-out mx-5"
               >
                 Careers
               </NavLink>
               <NavLink
                 to="/blog"
-                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-orange-500 transition duration-500 ease-in-out mx-5"
+                className="text-lg inline-flex font-medium leading-6 text-gray-900 border-b-2 border-transparent hover:border-cyan-500 transition duration-500 ease-in-out mx-5"
               >
                 Blog
               </NavLink>
 
               <Link
-                to="/contacto"
-                className="inline-flex ml-10 items-center rounded-md border border-transparent bg-orange-button px-6 py-2.5 text-lg font-medium text-white shadow-sm hover:bg-gray-900 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                to="/contact"
+                className="inline-flex ml-10 items-center rounded-md border border-transparent bg-cyan-button px-6 py-2.5 text-lg font-medium text-white shadow-sm hover:bg-gray-900 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
               >
                 Hire us
                 <span className="px-2">
@@ -146,11 +141,9 @@ function Navbar() {
           <div className="-ml-4 -mt-2 lg:hidden flex flex-wrap items-center justify-between sm:flex-nowrap md:px-4 px-2">
             <Link to="/" className="ml-4 mt-3">
               <img
-                src={
-                  "https://bafybeiczl4dcxupma2zeyilkukfl4yge64axnhajd722wxgin62mtts6uy.ipfs.w3s.link/murkivamarketing.png"
-                }
-                width={160}
-                height={160}
+                src={Logo_nav}
+                width={130}
+                height={130}
                 className=""
               />
             </Link>

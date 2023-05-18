@@ -5,22 +5,22 @@ function CaseCard({ data, index }) {
     <Link
       to={data.href}
       onMouseEnter={() => {
-        const title_element = document.getElementById(index);
-        title_element.classList.add('text-orange-500');
-        const img = document.getElementById(data.id);
-        img.classList.add('object-scale-down');
+        const title_element = document.getElementById(`title` + index);
+        title_element.classList.add("text-cyan-500");
+        const img = document.getElementById(`img` + index);
+        img.classList.add("object-scale-down");
       }}
       onMouseLeave={() => {
-        const title_element = document.getElementById(index);
-        title_element.classList.remove('text-orange-500');
-        const img = document.getElementById(data.id);
-        img.classList.remove('object-scale-down');
+        const title_element = document.getElementById(`title` + index);
+        title_element.classList.remove("text-cyan-500");
+        const img = document.getElementById(`img` + index);
+        img.classList.remove("object-scale-down");
       }}
       className="flex flex-col overflow-hidden  rounded-lg shadow-lg"
     >
       <div className="flex-shrink-0">
         <img
-          id={data.id}
+          id={`img` + index}
           className="h-96 w-full transition duration-400 ease-in-out object-cover"
           src={data.imageUrl}
           alt=""
@@ -35,7 +35,7 @@ function CaseCard({ data, index }) {
           </p>
           <a href={data.href} className="mt-2 block">
             <p
-              id={index}
+              id={`title` + index}
               className="lg:text-4xl pt-4 pb-6 text-2xl font-semibold transition duration-400 ease-in-out text-gray-900"
             >
               {data.title}

@@ -1,10 +1,4 @@
 import BlogCardHorizontal from "./BlogCardHorizontal";
-
-import {
-  CheckCircleIcon,
-  ChevronRightIcon,
-  EnvelopeIcon,
-} from "@heroicons/react/20/solid";
 import SmallSetPagination from "components/pagination/SmallSetPagination";
 
 function BlogList({ posts, get_blog_list_page, count }) {

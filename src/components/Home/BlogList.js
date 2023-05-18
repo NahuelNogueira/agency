@@ -1,7 +1,7 @@
 const posts = [
   {
     title: "Boost your conversion rate",
-    href: "#",
+    href: "/blog",
     category: {
       name: "Article",
       href: "#",
@@ -21,7 +21,7 @@ const posts = [
   },
   {
     title: "How to use search engine optimization to drive sales",
-    href: "#",
+    href: "/blog",
     category: { name: "Video", href: "#", color: "bg-pink-100 text-pink-800" },
     description:
       "Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.",
@@ -37,7 +37,7 @@ const posts = [
   },
   {
     title: "Improve your customer experience",
-    href: "#",
+    href: "/blog",
     category: {
       name: "Case Study",
       href: "#",

@@ -80,7 +80,7 @@ function Contact() {
   return (
     <Layout>
       <Helmet>
-        <title>Murkiva | Contact Us</title>
+        <title>Hawk | Contact Us</title>
         <meta
           name="description"
           content="Software and Digital Market Agency."
@@ -90,23 +90,23 @@ function Contact() {
           content="softtware agency, marketing agency, web development"
         ></meta>
         <meta name="robots" content="all"></meta>
-        <link rel="canonical" href="https://www.murkiva.com"></link>
-        <meta name="author" content="Murkiva" />
-        <meta name="publisher" content="Murkiva" />
+        <link rel="canonical" href="https://www.hawk.com"></link>
+        <meta name="author" content="Hawk" />
+        <meta name="publisher" content="Hawk" />
 
         {/* Social Media Tags */}
-        <meta property="og:title" content="Murkiva | Software Agency" />
+        <meta property="og:title" content="Hawk | Software Agency" />
         <meta
           property="og:description"
           content="Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones."
         />
-        <meta property="og:url" content="https://www.murkiva.com/" />
+        <meta property="og:url" content="https://www.hawk.com/" />
         <meta
           property="og:image"
           content="https://bafybeicwrhxloesdlojn3bxyjqnxgsagtd4sl53a7t4cn4vfe2abmybzua.ipfs.w3s.link/lightbnuilbg.jpg"
         />
 
-        <meta name="twitter:title" content="Murkiva | Software Agency" />
+        <meta name="twitter:title" content="Hawk | Software Agency" />
         <meta
           name="twitter:description"
           content="Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones."
@@ -159,13 +159,13 @@ function Contact() {
                         className="h-6 w-6 flex-shrink-0 text-gray-400"
                         aria-hidden="true"
                       />
-                      <span className="ml-3">support@example.com</span>
+                      <span className="ml-3">support@hawk.com</span>
                     </dd>
                   </div>
                 </dl>
                 <p className="mt-6 text-base text-gray-500">
                   Looking for careers?{" "}
-                  <a href="#" className="font-medium text-gray-700 underline">
+                  <a href="/careers" className="font-medium text-gray-700 underline">
                     View all job openings
                   </a>
                   .
@@ -187,7 +187,7 @@ function Contact() {
                       required
                       onChange={e=>onChange(e)}
                       autoComplete="name"
-                      className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-orange-500 focus:ring-orange-500"
+                      className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
                       placeholder="Full name"
                     />
                   </div>
@@ -202,7 +202,7 @@ function Contact() {
                       onChange={e=>onChange(e)}
                       name="email"
                       type="email"
-                      className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-orange-500 focus:ring-orange-500"
+                      className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
                       placeholder="Email"
                     />
                   </div>
@@ -221,7 +221,7 @@ function Contact() {
                         value={phone}
                         required
                         onChange={e=>onChange(e)}
-                        className="block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-cyan-500 focus:ring-cyan-500 sm:text-sm"
                         placeholder="Phone"
                         aria-describedby="price-currency"
                       />
@@ -236,7 +236,7 @@ function Contact() {
                       value={subject}
                       required
                       onChange={e=>onChange(e)}
-                      className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-orange-500 focus:ring-orange-500"
+                      className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
                       placeholder="Subject"
                     />
                   </div>
@@ -252,7 +252,7 @@ function Contact() {
                       required
                       onChange={e=>onChange(e)}
                       rows={4}
-                      className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-orange-500 focus:ring-orange-500"
+                      className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
                       placeholder="Message"
                       defaultValue={""}
                     />
@@ -315,14 +315,14 @@ function Contact() {
                         {
                           loading ?
                           <div
-                            className="relative inline-flex items-center rounded-md border border-transparent bg-orange-600 px-4 py-2 text-md font-medium text-white shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                            className="relative inline-flex items-center rounded-md border border-transparent bg-cyan-600 px-4 py-2 text-md font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
                           >
                             <CircleLoader loading={loading} size={25} color="#ffffff"/>
                           </div>
                           :
                           <button
                             type="submit"
-                            className="relative inline-flex items-center rounded-md border border-transparent bg-orange-600 px-4 py-2 text-md font-medium text-white shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                            className="relative inline-flex items-center rounded-md border border-transparent bg-cyan-600 px-4 py-2 text-md font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
                           >
                             Send Message
                           </button>

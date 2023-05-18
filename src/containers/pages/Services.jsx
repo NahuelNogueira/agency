@@ -3,16 +3,18 @@ import Navbar from "components/navigation/Navbar";
 import Header from "components/services/Header";
 import ServicesList from "components/services/ServicesList";
 import Layout from "hocs/layouts/Layout";
-import coding_img from "assets/img/services/coding.png";
+import JS from "assets/img/services/JS.png";
+import Python from "assets/img/services/Python.png";
+import react from "assets/img/services/react.png";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 
 const posts_software = [
   {
     title: "Javascript Developers",
-    img: coding_img,
-    href: "/servicios/javascript",
-    category: { name: "Development", href: "#" },
+    img: JS,
+    href: "/services/javascript",
+    category: { name: "Development" },
     description:
       "Talented and agile javascript developers for your project, available 24/7.",
     date: "Mar 16, 2020",
@@ -30,10 +32,10 @@ const posts_software = [
   {
     title: "How to use search engine optimization to drive sales",
     href: "#",
-    img: coding_img,
+    img: Python,
     category: { name: "Video", href: "#" },
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore.",
     date: "Mar 10, 2020",
     datetime: "2020-03-10",
     imageUrl:
@@ -49,7 +51,7 @@ const posts_software = [
   {
     title: "Improve your customer experience",
     href: "#",
-    img: coding_img,
+    img: react,
     category: { name: "Case Study", href: "#" },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
@@ -70,7 +72,7 @@ const posts_software = [
 const posts_design = [
   {
     title: "Boost your conversion rate",
-    img: coding_img,
+    img: JS,
     href: "#",
     category: { name: "Article", href: "#" },
     description:
@@ -90,10 +92,10 @@ const posts_design = [
   {
     title: "How to use search engine optimization to drive sales",
     href: "#",
-    img: coding_img,
+    img: Python,
     category: { name: "Video", href: "#" },
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore.",
     date: "Mar 10, 2020",
     datetime: "2020-03-10",
     imageUrl:
@@ -109,7 +111,7 @@ const posts_design = [
   {
     title: "Improve your customer experience",
     href: "#",
-    img: coding_img,
+    img: react,
     category: { name: "Case Study", href: "#" },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
@@ -134,7 +136,7 @@ function Services() {
   return (
     <Layout>
       <Helmet>
-        <title>Murkiva | Services</title>
+        <title>Hawk | Services</title>
         <meta
           name="description"
           content="Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones."
@@ -144,23 +146,23 @@ function Services() {
           content="agencia de software, agencia de marketing, creacion de pagina web"
         />
         <meta name="robots" content="all" />
-        <link rel="canonical" href="https://www.murkiva.com/" />
-        <meta name="author" content="Murkiva" />
-        <meta name="publisher" content="Murkiva" />
+        <link rel="canonical" href="https://www.hawk.com/" />
+        <meta name="author" content="Hawk" />
+        <meta name="publisher" content="Hawk" />
 
         {/* Social Media Tags */}
-        <meta property="og:title" content="Murkiva | Software Agency" />
+        <meta property="og:title" content="Hawk | Software Agency" />
         <meta
           property="og:description"
           content="Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones."
         />
-        <meta property="og:url" content="https://www.murkiva.com/" />
+        <meta property="og:url" content="https://www.hawk.com/" />
         <meta
           property="og:image"
           content="https://bafybeicwrhxloesdlojn3bxyjqnxgsagtd4sl53a7t4cn4vfe2abmybzua.ipfs.w3s.link/lightbnuilbg.jpg"
         />
 
-        <meta name="twitter:title" content="Murkiva | Software Agency" />
+        <meta name="twitter:title" content="Hawk | Software Agency" />
         <meta
           name="twitter:description"
           content="Agencia de software y marketing digital. Servicios de creacion de pagina web y desarrollo de aplicaciones."

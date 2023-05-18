@@ -6,7 +6,7 @@ export default function CasesList() {
     {
       id: "1234-qwert",
       title: "Boost your conversion rate",
-      href: "/casos/ecommerce",
+      href: "/cases/ecommerce",
       category: { name: "Ecommerce" },
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
@@ -25,7 +25,7 @@ export default function CasesList() {
     {
       id: "1234-asdf",
       title: "How to use search engine optimization to drive sales",
-      href: "/casos/ecommerce",
+      href: "/cases/ecommerce",
       category: { name: "Video" },
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
@@ -36,7 +36,7 @@ export default function CasesList() {
       readingTime: "4 min",
       author: {
         name: "Brenna Goyette",
-        href: "/casos/ecommerce",
+        href: "/cases/ecommerce",
         imageUrl:
           "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       },
@@ -55,7 +55,7 @@ export default function CasesList() {
       readingTime: "11 min",
       author: {
         name: "Daniela Metz",
-        href: "/casos/ecommerce",
+        href: "/cases/ecommerce",
         imageUrl:
           "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       },
@@ -78,7 +78,7 @@ export default function CasesList() {
       <div className="relative mx-auto max-w-full">
         <Carousel
           itemsToScroll={3}
-          itemsToShow={3}
+          itemsToShow={4}
           breakPoints={breakPoints}
           pagination={false}
           itemPadding={[0, 60]}

@@ -1,42 +1,38 @@
 const incentives = [
   {
-    name: "Free shipping",
+    name: "Fast solutions",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg",
     description:
-      "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+      "Our teams specialize in providing quick solutions to your company's problems.",
   },
   {
-    name: "10-year warranty",
+    name: "High Quality",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg",
     description:
-      "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+      "Every team's member are experts on their field to grant excellent products.",
   },
   {
-    name: "Exchanges",
+    name: "Escalable",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg",
     description:
-      "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+      "Every one of our final products are escalable so you don't have to worry about that.",
   },
 ];
 
 export default function Incentives() {
   return (
-    <div className="bg-white">
-      <div className="mx-auto  py-24  sm:py-32">
+    <div className="bg-white ">
+      <div className="mx-auto py-24 sm:py-16">
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
           <div className="max-w-3xl">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900">
               We built our business on customer service
             </h2>
             <p className="mt-4 text-gray-500">
-              At the beginning at least, but then we realized we could make a
-              lot more money if we kinda stopped caring about that. Our new
-              strategy is to write a bunch of things that look really good in
-              the headlines, then clarify in the small print but hope people
-              don't actually read it.
+              Focused on bringing the solutions to your need, our expert teams develop excellent products and grant maintance to your site.
             </p>
           </div>
           <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">
